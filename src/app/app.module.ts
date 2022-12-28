@@ -17,7 +17,7 @@ import { LayoutComponent } from './pages/layout/layout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
