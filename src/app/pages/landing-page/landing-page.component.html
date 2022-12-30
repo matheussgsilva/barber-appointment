@@ -110,22 +110,26 @@
             <h2 class="text-uppercase">Entre em contato</h2>
             <h3 class="text-muted mb-4">Envie uma mensagem com a sua dúvida ou sugestão.</h3>
         </div>
-        <form id="contactForm">
+        <form [formGroup]="form" id="contactForm">
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6 col-gap-5 d-grid gap-3">
                     <div class="form-group">
-                        <input class="form-control bg-dark text-white border-secondary" id="name" type="text" placeholder="Nome" />
+                        <label for="name" class="form-label">Nome</label>
+                        <input class="form-control bg-dark text-white border-secondary" id="name" type="text" placeholder="Digite seu nome" formControlName="name" />
                     </div>
                     <div class="form-group">
-                        <input class="form-control bg-dark text-white border-secondary" id="email" type="email" placeholder="Email" />
+                        <label for="email" class="form-label">E-mail</label>
+                        <input class="form-control bg-dark text-white border-secondary" id="email" type="email" placeholder="Digite seu e-mail" formControlName="email" />
                     </div>
                     <div class="form-group mb-md-0">
-                        <input class="form-control bg-dark text-white border-secondary" id="phone" type="tel" placeholder="Telefone" />
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input class="form-control bg-dark text-white border-secondary" id="phone" type="tel" placeholder="Digite seu telefone" formControlName="phone" />
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group form-group-textarea mb-md-0">
-                        <textarea class="form-control bg-dark text-white border-secondary" id="message" placeholder="Mensagem"></textarea>
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control bg-dark text-white border-secondary" id="message" placeholder="Digite sua dúvida ou sugestão"></textarea>
                     </div>
                 </div>
             </div>
