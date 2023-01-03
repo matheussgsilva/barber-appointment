@@ -7,8 +7,7 @@ import { User } from '../models/user';
   providedIn: 'root'
 })
 export class AuthService {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   public isLoggedIn(): boolean {
     return !!localStorage['user'];
